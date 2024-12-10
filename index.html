@@ -3,35 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iba's Creative Space</title>
+    <title>Iba's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <style>
         /* General Styling */
         body {
-            font-family: 'Verdana', sans-serif;
+            font-family: Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #ffd6e8; /* Light pink background */
+            color: #4b0082; /* Dark blue/purple text */
             line-height: 1.8;
+            text-align: center;
+            scroll-behavior: smooth; /* Smooth scrolling effect */
         }
 
         /* Header Styling */
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
             text-align: center;
+            background-color: #fff; /* White background for header */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
         }
 
         header h1 {
+            font-family: 'Silkscreen', cursive;
+            font-size: 3em;
             margin: 0;
-            font-size: 2.5em;
+            color: #4b0082; /* Dark blue/purple */
         }
 
-        /* Navigation Menu */
+        header p {
+            font-size: 1.2em;
+            color: #4b0082;
+        }
+
+        /* Navigation */
         nav {
-            text-align: center;
-            background-color: #333;
+            background-color: #b3c7ff; /* Light blue accent */
             padding: 10px 0;
         }
 
@@ -39,137 +54,158 @@
             list-style: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
             margin: 0 15px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: white;
+            font-family: 'Silkscreen', cursive;
+            color: #4b0082;
             font-size: 1.2em;
         }
 
         nav ul li a:hover {
-            color: #4CAF50;
+            color: #ffd6e8; /* Light pink hover effect */
         }
 
         /* Section Styling */
         section {
             padding: 40px 20px;
             margin: 20px auto;
-            max-width: 900px;
+            max-width: 800px;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         section h2 {
-            color: #4CAF50;
-            margin-bottom: 10px;
+            font-family: 'Silkscreen', cursive;
+            font-size: 2em;
+            color: #4b0082;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
         }
 
         section img {
-            display: block;
+            width: 60px; /* Larger icon size */
+            height: auto;
+        }
+
+        section p, section ul {
+            font-size: 1em;
+            color: #4b0082;
+        }
+
+        /* Project Section Styling */
+        .project-image {
+            width: 70%;
             margin: 20px auto;
-            max-width: 100%;
-            border-radius: 8px;
+            border-radius: 15px;
         }
 
-        /* Table Styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .digital-diary {
+            margin-top: 40px;
         }
 
-        table, th, td {
-            border: 1px solid #ddd;
+        .side-by-side {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
         }
 
-        th, td {
-            padding: 15px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
+        .side-by-side img, .digital-diary img {
+            width: 45%; /* Adjusted width for all images */
+            border-radius: 15px;
         }
 
         /* Footer Styling */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
+            background-color: #b3c7ff; /* Light blue footer */
+            color: #4b0082;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Iba's Creative Space</h1>
+        <img src="blobgif.gif" alt="Y2K Blob Logo">
+        <h1>Iba Abbasi</h1>
+        <p>Creative Designer | Digital Visionary</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#interests">Interests</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Iba Abbasi, a creative design student passionate about blending art and technology to create amazing experiences. I love latte art, experimenting with fashion, and designing intuitive digital experiences.</p>
-        <img src="profile.jpg" alt="Iba's Picture">
+        <h2><img src="heart gif.gif" alt="Heart Icon"> About Me</h2>
+        <p>Hi! I'm Iba Abbasi, a passionate design student with a love for creativity and technology. I specialize in creating visually stunning and user-friendly designs that leave a lasting impression.</p>
     </section>
 
-    <section id="interests">
-        <h2>My Interests</h2>
-        <p>Here are some of my hobbies and why I love them:</p>
-        <table>
-            <tr>
-                <th>Hobby</th>
-                <th>Why I Love It</th>
-            </tr>
-            <tr>
-                <td>Latte Art</td>
-                <td>It's relaxing and allows me to express my creativity.</td>
-            </tr>
-            <tr>
-                <td>Fashion Design</td>
-                <td>It lets me push boundaries and explore bold ideas.</td>
-            </tr>
-            <tr>
-                <td>UX Design</td>
-                <td>Creating user-friendly interfaces makes me happy!</td>
-            </tr>
-        </table>
+    <section id="skills">
+        <h2><img src="stargif.gif" alt="Star Icon"> Skills</h2>
+        <ul>
+            <li>UI/UX Design</li>
+            <li>HTML & CSS</li>
+            <li>Branding & Identity</li>
+            <li>Digital Illustration</li>
+        </ul>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some projects I've worked on recently:</p>
-        <ul>
-            <li>Revlon Rebranding: <i>Revive Your Bold</i></li>
-            <li>Pilot Vanishing Point Ad Campaign</li>
-            <li>Ontario Bluebirds Website Redesign</li>
-        </ul>
-        <img src="projects.jpg" alt="Screenshot of my projects">
+        <h2><img src="butterflygif.gif" alt="Butterfly Icon"> Projects</h2>
+
+        <!-- Jhumaka -->
+        <div class="project">
+            <h3>Jhumaka</h3>
+            <p>A hand-drawn digital art piece exploring tradition and beauty.</p>
+            <img src="1Iba Abbasi.png" alt="Jhumaka Digital Art" class="project-image">
+        </div>
+
+        <!-- Long Live -->
+        <div class="project">
+            <h3>Long Live</h3>
+            <p>A hand-drawn digital art piece celebrating the impermanence of life.</p>
+            <img src="5Iba Abbasi.png" alt="Long Live Digital Art" class="project-image">
+        </div>
+
+        <!-- Digital Diary Section -->
+        <div class="digital-diary">
+            <h3>Digital Diary: A Visual Journal</h3>
+            <p>Explore my visual diary, where creativity meets inspiration. A showcase of design and expression.</p>
+            <img src="zine 4 porfolio.png" alt="Digital Diary Cover">
+            <div class="side-by-side">
+                <img src="zine 4 porfolio2.png" alt="Digital Diary Page 2">
+                <img src="zine 4 porfolio3.png" alt="Digital Diary Page 3">
+            </div>
+            <div class="side-by-side">
+                <img src="zine 4 porfolio4.png" alt="Digital Diary Page 4">
+                <img src="zine 4 porfolio5.png" alt="Digital Diary Page 5">
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:iabbasi@uwaterloo.ca">iabbasi@uwaterloo.ca</a>. I’m always open to new collaborations!</p>
+        <h2><img src="spadegif.gif" alt="Spade Icon"> Contact Me</h2>
+        <p>Let's connect! Email me at <a href="mailto:iabbasi@uwaterloo.ca" style="color: #4b0082; text-decoration: none;">iabbasi@uwaterloo.ca</a>.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Iba Abbasi. Designed with passion.</p>
+        <p>&copy; 2024 Iba Abbasi. Designed with love and Y2K vibes.</p>
     </footer>
 </body>
 </html>
